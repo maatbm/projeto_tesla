@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+@font-face {
+    font-family: "TESLA";
+    src: url("../../customs/TESLA.ttf");
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Balthazar",sans-serif;
+}
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.tesla{
+    width: 100%;
+    height: auto;
+}
+.tesla1{
+    font-family: "TESLA", sans-serif;
+    color: whitesmoke;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product{
+    position: relative;
+    width: 30%;
+    height: auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: rgba(163, 163, 163, 0.428);
+    box-shadow: rgb(0, 0, 0) 5px 10px 70px 20px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+.product>h1{
+    text-align: center;
+    font-weight: 600;
+}
+.overlay{
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(174, 174, 174, 0.878);
+}
+.product:hover .overlay {
+    opacity: 1;
+}
+.overlay>h1{
+    text-align: center;
+    font-weight: 600;
+}
+p{
+    font-size: x-large;
+    margin-left: 15px;
+}
+.img_div{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

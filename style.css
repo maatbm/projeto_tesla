@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+@font-face {
+    font-family: TESLA;
+    src: url('customs/TESLA.ttf') format('truetype');
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: "Balthazar", sans-serif;
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form_div{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(64, 63, 63, 0.455);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 10px 40px 20px;
+}
+.img1{
+    width: 10%;
+    height: auto;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+p{
+    font-size: large;
+    margin: 0;
+    font-weight: 700;
+}
+form{
+    width: 100%;
+    height: auto;
+    align-self: flex-start;
+}
+.btn_log{
+    width: 40%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(89, 14, 14);
+    font-size: 16px;
+    font-weight: 550;
+    border-radius: 10px;
+    border: none;
+}
+.btn_log:hover{
+    background-color: rgb(139, 3, 3);
+    cursor: pointer;
+}
+.btn_div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.input-line {
+    border: none;
+    border-bottom: black solid 2px;
+    background: transparent;
+    outline: none;
+    height: 17px;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 10px;
+}
+form > p,.input-line{
+    margin-left: 30px;
+}
+.input-line::placeholder{
+    color: #000;
+    font-weight: 500;
+}
+.tesla{
+    width: 100%;
+    height: auto;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tesla1{
+    margin: 0;
+    margin-left: 35px;
+    color: red;
+    font-size: 40px;
+    font-family: "TESLA", sans-serif;
+}
+a{
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 550;
+}
+a:hover{
+    color: rgb(139, 3, 3);
+}
+.anc{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
